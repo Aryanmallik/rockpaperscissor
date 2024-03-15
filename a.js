@@ -44,7 +44,6 @@ function computeScore() {
     }
     let b = compinp();
     let val = computeWinner(a, b);
-    console.log(val, "val");
     if (val == 0) {
       console.log("draw");
     } else if (val == 1) {
