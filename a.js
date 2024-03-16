@@ -200,7 +200,6 @@ function handleKeyDown(event) {
     location.reload();
   }
 }
-
 const buttons = document.querySelectorAll(".ch");
 buttons.forEach((button) => {
   button.addEventListener("click", handleButtonClick);
