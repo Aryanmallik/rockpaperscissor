@@ -112,3 +112,60 @@ body {
   text-align: center;
   padding-top: 3%;
 }
+.ch img {
+  height: 142px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    gap: 20px;
+  }
+
+  .choices {
+    align-items: center;
+    gap: 15px;
+  }
+
+  .ch img {
+    height: 115px;
+  }
+  .ch {
+    width: 120px;
+    height: 120px;
+  }
+
+  .ch:hover {
+    height: 140px;
+    width: 140px;
+  }
+
+  .container {
+    flex-direction: column;
+    border: 0px;
+    gap: 20px;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .versus {
+    font-size: 20px;
+  }
+
+  .result {
+    font-size: 20px;
+  }
+
+  .playerSide,
+  .compSide {
+    gap: 15px;
+  }
+
+  .choice {
+    width: 150px;
+    height: 150px;
+  }
+  .choice img {
+    height: 150px;
+  }
+}
