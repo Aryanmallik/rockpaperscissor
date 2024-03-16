@@ -3,8 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>rock paper scirror</title>
-    <script src="./a.js"></script>
+    <link rel="stylesheet" href="a.css" />
+    <script src="a.js" defer></script>
+    <title>Rock Paper Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <div class="result"></div>
+    <div class="versus">
+      <div class="container">
+        <div class="playerSide">
+          <div class="you">You</div>
+          <div class="pscore">0</div>
+          <div class="player">
+            <div class="choice"></div>
+          </div>
+        </div>
+        <div class="center">
+          <div class="line"></div>
+          Vs
+          <div class="line"></div>
+        </div>
+        <div class="compSide">
+          <div class="cpu">CPU</div>
+          <div class="cscore">0</div>
+          <div class="comp">
+            <div class="choice"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="choices">
+      <button class="ch" value="rock">
+        <img src="./Public/rock.png" height="142px" />
+      </button>
+      <button class="ch" value="paper">
+        <img src="./Public/paper.png" height="142px" />
+      </button>
+      <button class="ch" value="scissors">
+        <img src="./Public/scissor.png" height="142px" />
+      </button>
+    </div>
+  </body>
 </html>
