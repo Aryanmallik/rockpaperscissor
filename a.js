@@ -173,7 +173,7 @@ function handleMove(choice) {
 function handleButtonClick() {
   if (!gameOver) {
     const choice = this.value;
-    handlePlayerMove(choice);
+    handleMove(choice);
   } else {
     location.reload();
   }
