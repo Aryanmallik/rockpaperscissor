@@ -133,11 +133,10 @@ function computeWinner(a, b) {
 function handleGameOver(winner) {
   gameOver = true;
   if (winner === "player") {
-    result.innerHTML =
-      "game over you win<br/><br/>click one of the options to restart";
+    result.innerHTML = "game over you win<br/><br/>click any button to restart";
   } else {
     result.innerHTML =
-      "game over you lose<br/><br/>click one of the options to restart";
+      "game over you lose<br/><br/>click any button to restart";
   }
 }
 
