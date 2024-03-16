@@ -65,7 +65,6 @@ function computeScore() {
           uscore++;
           result.innerHTML = "you win";
         }
-
         playerScore.innerHTML = uscore;
         cpuScore.innerHTML = cscore;
         console.log("user-", uscore, "comp-", cscore);
