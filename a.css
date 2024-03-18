@@ -139,7 +139,7 @@ body {
   }
 
   .container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     border: 0px;
     gap: 20px;
   }
