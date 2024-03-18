@@ -10,7 +10,7 @@ let gameOver = false;
 function compinp() {
   let arr = ["rock", "paper", "scissors"];
   const compval = arr[Math.floor(Math.random() * arr.length)];
-  comp.innerHTML = `<img src="./Public/${compval}.png" width="150px" height="200px">`;
+  comp.innerHTML = `<img src="./Public/${compval}.png" width="120px" height="200px">`;
   return compval;
 }
 
@@ -41,7 +41,7 @@ function handleGameOver(winner) {
 
 function handleMove(choice) {
   if (!gameOver) {
-    player.innerHTML = `<img src="./Public/${choice}.png" width="150px" height="200px">`;
+    player.innerHTML = `<img src="./Public/${choice}.png" width="120px" height="200px">`;
     let b = compinp();
     let val = computeWinner(choice, b);
     console.log(val);
@@ -81,13 +81,13 @@ function handleKeyDown(event) {
   if (!gameOver) {
     let key;
     switch (event.key) {
-      case "m":
+      case "r":
         key = "rock";
         break;
-      case "k":
+      case "p":
         key = "paper";
         break;
-      case "a":
+      case "s":
         key = "scissors";
         break;
       default:
