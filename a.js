@@ -61,7 +61,6 @@ function picPop(a, b) {
     }, 2000);
   }
 }
-
 function handleGameOver(winner) {
   gameOver = true;
   if (winner === "player") {
