@@ -58,7 +58,7 @@ function picPop(a, b) {
     pic.innerHTML = `<img src="./Public/${a}${b}.png" height="1000vw"/>`;
     setTimeout(() => {
       pic.innerHTML = "";
-    }, 2000);
+    }, 3000);
   }
 }
 function handleGameOver(winner) {
