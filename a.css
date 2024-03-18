@@ -41,9 +41,9 @@ html {
 .piic {
   display: flex;
   position: absolute;
-  width: 300px;
-  top: 5%;
-  left: 30%;
+  width: 800px;
+  top: 30%;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 300px;
   z-index: 2;
@@ -200,14 +200,14 @@ body {
     height: 150px;
   }
   .piic img {
-    height: 110vw;
+    height: 400px;
   }
   .piic {
     display: flex;
     position: absolute;
     width: 300px;
-    top: 35%;
-    left: 35%;
+    top: 50%;
+    left: 40%;
     transform: translate(-50%, -50%);
     height: 300px;
     z-index: 2;

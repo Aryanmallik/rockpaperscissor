@@ -14,38 +14,18 @@ function compinp() {
   return compval;
 }
 
-// function computeWinner(a, b) {
-//   console.log(a, b);
-//   if (a == b) {
-//     return 0;
-//   } else if (
-//     (a == "rock" && b == "paper") ||
-//     (a == "paper" && b == "scissors") ||
-//     (a == "scissors" && b == "rock")
-//   ) {
-//     return 1;
-//   } else {
-//     return 2;
-//   }
-// }
 function computeWinner(a, b) {
   picPop(a, b);
+  console.log(a, b);
   if (a == b) {
     return 0;
-  } else if (a == "rock" && b == "paper") {
-    console.log(a, b);
-    return 1;
-  } else if (a == "rock" && b == "scissors") {
-    console.log(a, b);
+  } else if (
+    (a == "rock" && b == "paper") ||
+    (a == "paper" && b == "scissors") ||
+    (a == "scissors" && b == "rock")
+  ) {
     return 2;
-  } else if (a == "paper" && b == "scissors") {
-    console.log(a, b);
-    return 1;
-  } else if (a == "scissors" && b == "paper") {
-    console.log(a, b);
-    return 2;
-  } else if (a == "scissors" && b == "rock") {
-    console.log(a, b);
+  } else {
     return 1;
   }
 }
@@ -55,7 +35,7 @@ function picPop(a, b) {
   if (a == b) {
     pic.innerHTML = ``;
   } else {
-    pic.innerHTML = `<img src="./Public/${a}${b}.png" height="1000vw"/>`;
+    pic.innerHTML = `<img src="./Public/${a}${b}.png" height="800px"/>`;
     setTimeout(() => {
       pic.innerHTML = "";
     }, 3000);
