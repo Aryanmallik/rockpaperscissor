@@ -41,11 +41,11 @@ html {
 .piic {
   display: flex;
   position: absolute;
-  width: 100px;
-  top: 50%;
-  left: 50%;
+  width: 300px;
+  top: 5%;
+  left: 30%;
   transform: translate(-50%, -50%);
-  height: 100px;
+  height: 300px;
   z-index: 2;
 }
 body {
@@ -146,7 +146,7 @@ body {
 .ch img {
   height: 142px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 869px) {
   body {
     gap: 20px;
   }
@@ -200,5 +200,18 @@ body {
   }
   .choice img {
     height: 150px;
+  }
+  .piic img {
+    height: 130vw;
+  }
+  .piic {
+    display: flex;
+    position: absolute;
+    width: 300px;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    z-index: 2;
   }
 }

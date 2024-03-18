@@ -29,20 +29,36 @@ function compinp() {
 //   }
 // }
 function computeWinner(a, b) {
+  picPop(a, b);
   if (a == b) {
     return 0;
   } else if (a == "rock" && b == "paper") {
+    console.log(a, b);
     return 1;
   } else if (a == "rock" && b == "scissors") {
-    return 2;
-  } else if (a == "paper" && b == "rock") {
+    console.log(a, b);
     return 2;
   } else if (a == "paper" && b == "scissors") {
+    console.log(a, b);
     return 1;
   } else if (a == "scissors" && b == "paper") {
+    console.log(a, b);
     return 2;
   } else if (a == "scissors" && b == "rock") {
+    console.log(a, b);
     return 1;
+  }
+}
+function picPop(a, b) {
+  const pic = document.querySelector(".piic");
+
+  if (a == b) {
+    pic.innerHTML = ``;
+  } else {
+    pic.innerHTML = `<img src="./Public/${a}${b}.png" height="1000vw"/>`;
+    setTimeout(() => {
+      pic.innerHTML = "";
+    }, 2000);
   }
 }
 
@@ -102,10 +118,10 @@ function handleKeyDown(event) {
         key = "rock";
         break;
       case "k":
-        key = "paper";
+        key = "scissors";
         break;
       case "a":
-        key = "scissors";
+        key = "paper";
         break;
       default:
         return;
