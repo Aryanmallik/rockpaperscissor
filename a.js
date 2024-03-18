@@ -10,7 +10,7 @@ let gameOver = false;
 function compinp() {
   let arr = ["rock", "paper", "scissors"];
   const compval = arr[Math.floor(Math.random() * arr.length)];
-  comp.innerHTML = `<img src="./Public/${compval}2.png" width="150px" height="200px">`;
+  comp.innerHTML = `<img src="./Public/${compval}.png" width="150px" height="200px">`;
   return compval;
 }
 
@@ -41,7 +41,7 @@ function handleGameOver(winner) {
 
 function handleMove(choice) {
   if (!gameOver) {
-    player.innerHTML = `<img src="./Public/${choice}2.png" width="150px" height="200px">`;
+    player.innerHTML = `<img src="./Public/${choice}.png" width="150px" height="200px">`;
     let b = compinp();
     let val = computeWinner(choice, b);
     console.log(val);
@@ -59,10 +59,10 @@ function handleMove(choice) {
     cpuScore.innerHTML = cscore;
     console.log("user-", uscore, "comp-", cscore);
 
-    if (uscore == -1) {
+    if (uscore == 5) {
       console.log("user win");
       handleGameOver("player");
-    } else if (cscore == -1) {
+    } else if (cscore == 5) {
       handleGameOver("computer");
     }
   }

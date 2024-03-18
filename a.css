@@ -18,6 +18,36 @@ html {
   height: 100%;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  color: white;
+  /* align-items: center; */
+  font-size: 26px;
+  gap: 150px;
+  border: 5px solid #8f178b;
+  border-radius: 7px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.pictur {
+  position: relative;
+}
+
+.contain {
+  z-index: 1;
+}
+
+.piic {
+  display: flex;
+  position: absolute;
+  width: 100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100px;
+  z-index: 2;
+}
 body {
   font-family: "Press Start 2P", system-ui;
   font-weight: 400;
@@ -37,6 +67,7 @@ body {
   /* align-items: center; */
   font-size: 26px;
   margin-top: 40px;
+  margin-bottom: 80px;
 }
 .result {
   padding-top: 4%;
@@ -115,7 +146,7 @@ body {
 .ch img {
   height: 142px;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 869px) {
   body {
     gap: 20px;
   }
