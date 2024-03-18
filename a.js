@@ -10,7 +10,7 @@ let gameOver = false;
 function compinp() {
   let arr = ["rock", "paper", "scissors"];
   const compval = arr[Math.floor(Math.random() * arr.length)];
-  comp.innerHTML = `<img src="./Public/${compval}.png" height="200px">`;
+  comp.innerHTML = `<img src="./Public/${compval}2.png" width="150px" height="200px">`;
   return compval;
 }
 
@@ -41,7 +41,7 @@ function handleGameOver(winner) {
 
 function handleMove(choice) {
   if (!gameOver) {
-    player.innerHTML = `<img src="./Public/${choice}.png" height="200px">`;
+    player.innerHTML = `<img src="./Public/${choice}2.png" width="150px" height="200px">`;
     let b = compinp();
     let val = computeWinner(choice, b);
     console.log(val);
@@ -59,10 +59,10 @@ function handleMove(choice) {
     cpuScore.innerHTML = cscore;
     console.log("user-", uscore, "comp-", cscore);
 
-    if (uscore == 5) {
+    if (uscore == -1) {
       console.log("user win");
       handleGameOver("player");
-    } else if (cscore == 5) {
+    } else if (cscore == -1) {
       handleGameOver("computer");
     }
   }
@@ -81,13 +81,13 @@ function handleKeyDown(event) {
   if (!gameOver) {
     let key;
     switch (event.key) {
-      case "r":
+      case "m":
         key = "rock";
         break;
-      case "p":
+      case "k":
         key = "paper";
         break;
-      case "s":
+      case "a":
         key = "scissors";
         break;
       default:
