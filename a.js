@@ -13,7 +13,6 @@ function compinp() {
   comp.innerHTML = `<img src="./Public/${compval}.png" width="120px" height="200px">`;
   return compval;
 }
-
 function computeWinner(a, b) {
   console.log(a, b);
   if (a == b) {
